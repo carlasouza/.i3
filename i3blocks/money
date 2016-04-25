@@ -1,0 +1,4 @@
+#!/bin/bash
+D=`curl -s "http://download.finance.yahoo.com/d/quotes.csv?e=.csv&f=sl1d1t1&s=USDBRL=X" | cut -d ',' -f2`
+S=`curl -s "http://download.finance.yahoo.com/d/quotes.csv?e=.csv&f=sl1d1t1&s=USDSEK=X" | cut -d ',' -f2`
+echo "R$D  kr$S"

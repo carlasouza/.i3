@@ -1,0 +1,8 @@
+#!/bin/sh
+
+TZ=":America/Fortaleza" date '+%T'
+
+case $BLOCK_BUTTON in
+  1) sudo /usr/bin/timedatectl set-timezone $TZ ;;
+esac
+
